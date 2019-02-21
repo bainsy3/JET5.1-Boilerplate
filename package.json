@@ -1,0 +1,29 @@
+{
+  "name": "jetboilerplate",
+  "version": "1.0.0",
+  "description": "Oracle JET boilerplate app for POC & production grade apps",
+  "author": {
+    "name": "Chay Carnell"
+  },
+  "dependencies": {
+    "@oracle/oraclejet": "^5.1.0",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {
+    "@oracle/grunt-oraclejet": "~5.1.0",
+    "@oracle/oraclejet-tooling": "~5.1.0",
+    "grunt": "^1.0.1",
+    "jasmine": "^2.7.0",
+    "jasmine-core": "^3.2.0",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^1.1.2",
+    "karma-requirejs": "^1.1.0",
+    "load-grunt-config": "0.19.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}

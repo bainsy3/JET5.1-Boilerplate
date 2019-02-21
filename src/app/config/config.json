@@ -1,0 +1,13 @@
+{
+    "buildVersion": "1.0",
+    "applicationId": "<<iOS certificate name Or Android package name>>",
+    "mobileBackendId": "<<Mobile Backend ID>>",
+    "isProduction": false,
+    "servicesUrlPrefix": "https://sample.cloud.com/services",
+    "jcsUrlPrefix": "https://sample.cloud.com",
+    "hcmUrlPrefix": "https://sample.cloud.com",
+    "androidProjectID": "<<Android Sender ID>>",
+    "firstDayOfWeek": 1,
+    "timeoutWarningDuration": 300000,
+    "timeoutNowCountDown": 10
+}

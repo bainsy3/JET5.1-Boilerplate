@@ -1,0 +1,21 @@
+{
+    "sampleOsbServiceCall": {
+        "serviceType": "OSB",
+        "name": "getOsbData",
+        "uri": "/osb/data",
+        "mockuri": "app/mockData/osbMockSample.json",
+        "method": "GET",
+        "contentType": "application/json",
+        "dataType": "json",
+        "primaryObject": "profile"
+    },
+    "sampleHcmServiceCall": {
+        "serviceType": "HCM",
+        "name": "getHcmData",
+        "uri": "/hcm/data",
+        "mockuri": "app/mockData/hcmMockSample.json",
+        "method": "GET",
+        "contentType": "application/json",
+        "dataType": "json"
+    }
+}

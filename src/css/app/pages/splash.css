@@ -1,0 +1,19 @@
+svg path {
+    will-change: auto;
+    stroke-width: 20px;
+    stroke-miterlimit: round;
+    transition: stroke-dashoffset 2000ms ease-in-out;
+    stroke-linecap: round;
+}
+
+.outer-meter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meter-text {
+    position: absolute;
+    margin-top: 5%;
+    text-align: center;
+}

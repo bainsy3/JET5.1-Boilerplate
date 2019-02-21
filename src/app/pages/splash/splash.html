@@ -1,0 +1,20 @@
+<!-- Sample SVG radial progress bar -->
+<div class="outer-meter-container">
+    <svg  xmlns="http://www.w3.org/2000/svg" height="600" width="600" viewBox="0 0 200 200" data-value="100">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#b0e55b;stop-opacity:0.8" />
+                <stop offset="100%" style="stop-color:#1685c3;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <path class="bg" stroke="#ccc" d="M41 149.5a77 77 0 1 1 117.93 0"  fill="none"/>
+        <path class="meter" stroke="url(#gradient)" d="M41 149.5a77 77 0 1 1 117.93 0" fill="none" stroke-dasharray="350" stroke-dashoffset="350"/>
+    </svg>
+    <!-- Meter text -->
+    <span class="meter-text">
+        <div>boilerplate app is functioning</div>
+        <!-- ko if: $root.featureControl.splashPage -->
+        <div>Feature control is active</div>
+        <!-- /ko -->
+    </span>
+</div>

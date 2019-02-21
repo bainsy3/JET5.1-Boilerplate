@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <title>OCS boilerplate</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="css/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="css/images/touchicon.png">
+    <meta name="apple-mobile-web-app-title" content="Oracle JET">
+    <!-- injector:theme -->
+    <link rel="stylesheet" href="css/libs/oj/v5.1.0/alta/oj-alta-min.css" id="css" />
+    <!-- endinjector -->
+    <!-- Start application specific styling -->
+    <link rel="stylesheet" href="css/app/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/app/pages/splash.css" type="text/css" />
+    <!-- end app specific styling -->
+    <script type="text/javascript" data-main="js/main" src="js/libs/require/require.js"></script>
+    <!-- click jacking prevention -->
+    <script>
+        if (self === top) {
+            var theBody = document.getElementsByTagName('body')[0];
+            //theBody.style.display = "block";
+        } else {
+            top.location = self.location;
+        }
+        ;
+    </script>
+</head>
+
+<body>
+    <!-- app 'busy'/'loading' graphic -->
+    <div id="busy" style="z-index: 999;">
+        <div class='uil-default-css' style='-webkit-transform:scale(0.65);transform:scale(0.65);'>
+            <div class='progressBar'></div>
+            <div class='progressBar'></div>
+            <div class='progressBar'></div>
+        </div>
+    </div>
+    <!-- App toast message element -->
+    <div id="toast" data-bind="text: toastMessage, css: toastType, click: dismissToast"></div>
+    <!-- drawer nav goes here -->
+    <div id="globalBody" class="oj-hybrid-applayout-page oj-hybrid-applayout-scrollable-wrapper">
+        <div class="oj-hybrid-applayout-content oj-hybrid-applayout-scrollable" data-bind="ojModule: moduleConfig"></div>
+    </div>
+    <!-- footer goes here -->
+</body>
+
+</html>
